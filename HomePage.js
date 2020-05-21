@@ -1,4 +1,10 @@
 
+// prompt
+
+
+alert("Thanks for visiting! We would appreciate your feedback.");
+
+
 //slide show
 
 var slideIndex = 1;
@@ -27,4 +33,5 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
 

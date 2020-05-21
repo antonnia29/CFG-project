@@ -1,6 +1,6 @@
 body, html {
   height: 100%;
-  background-image: url('../wood-2142241_1920.jpg');  
+  background-image: url('./wood-2142241__340.webp');  
     background-size: cover;
 				background-position: center;
         background-attachment: fixed;
@@ -9,26 +9,88 @@ body, html {
         font-family: 'Handlee', cursive;
   
   }
+
+
+/* Nav pane */
+
+.body {
+  margin: 0;
+  font-family: sans-serif; 
+} 
+
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #1f2020c2;
+  position: fixed;
+  height: 100%;
+  overflow: auto;
 }
 
-/*First Image*/
+.sidebar a {
+  display: block;
+  color: rgb(226, 227, 228);
+  padding: 16px;
+  text-decoration: none;
+}
+ 
+.sidebar a.active {
+  background-color: rgb(32, 163, 71);
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: rgb(173, 173, 173);
+  color: white;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {float: left;}
+  div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+
+/*First Image */
 
 .flexcontainerAA{
     display:flex;
     align-items: center;
     justify-content: center;
-   
+    font-size: 30;
     max-width:900px;
     margin:3rem auto;
    
-}
+} 
+
+
+
+
 /*First Recipe*/
 .flexcontainerA{
 
     background-color:rgba(255, 255, 255, 0.3);
     color: black; 
-    width: 80%;
-    height: 700px;
+    width: 90%;
+    height: 750px;
     font-size: 20px;
     display:flex ;
     flex-direction: row;
@@ -48,8 +110,9 @@ body, html {
 .emails{
   font-family: 'Handlee', cursive;
   font-size:20px;
-  font-color:black;
+  color:black;
 }
+
 .button{
 
   border:0;
@@ -174,3 +237,5 @@ label {
   background: #55ACEE;
   color: black;
 }
+
+
